@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+:root {
+    --bg-color: #1f1e1e;
+    --bg-sec-color: rgb(41, 41, 41);
+    --prim-color: white;
+    --sec-color: rgb(197, 196, 196);
+    --third-color: rgb(240, 240, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+
+section.intro {
+   display: flex;
+   flex-direction: row;
+   gap: 4rem;
+   justify-content: space-around; 
+   padding: 2rem 12rem;
+   margin: 2rem 4rem;
+}
+
+.intro img {
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.intro-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: start;
+    font-family: 'Inter', sans-serif;
+}
+
+.intro-desc h1 {
+    font-size: 6rem;
+}
+
+.intro-desc h2 {
+    font-size: 3rem;
+}
+
+.intro-desc h2 span {
+    color: rgb(246, 178, 52);
+}
+
+.intro-desc span a {
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    background-color: rgb(0, 213, 255);
+    color: var(--prim-color);
+    border-radius: .3rem;
+}
+
+.intro-desc a:hover {
+    background-color: rgb(0, 189, 255);
+    transition: background-color .4s;
+}
+
+@media(max-width: 1080px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem;
+        margin: 0;
+    }
+}
