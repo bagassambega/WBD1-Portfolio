@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bg-color: #1f1e1e;
+    --bg-sec-color: rgb(41, 41, 41);
+    --prim-color: white;
+    --sec-color: rgb(197, 196, 196);
+    --third-color: rgb(240, 240, 240);
+    --bg-active: rgb(39, 39, 39);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    margin-top: 1rem;
+}
+
+nav a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: var(--sec-color);
+    font-size: 1.1rem;
+    padding: .8rem 1.4rem;
+    border-radius: .6rem;
+}
+
+nav a#current {
+    color: var(--prim-color);
+    background-color: var(--bg-active);
+}
+
+nav a:hover {
+    color: var(--third-color);
+    transition: color .25s;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    background-color: var(--bg-sec-color);
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .contacts-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h1 {
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 1.6rem;
+}
+
+footer .links a, footer .contacts a {
+    text-decoration: none;
+    color: var(--prim-color);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+footer .contacts a {
+    font-size: 1.2rem;
+}
+
+footer .links a:hover, footer .contacts a:hover {
+    color: var(--sec-color);
+}
