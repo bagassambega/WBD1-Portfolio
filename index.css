@@ -38,13 +38,17 @@ section#intro {
 .intro-desc span a {
     text-decoration: none;
     padding: .6rem 1.2rem;
-    background-color: rgb(0, 213, 255);
+    background-color: var(--prim-button);
     color: var(--prim-color);
     border-radius: .3rem;
 }
 
+.intro-desc > span {
+    margin-top: .6rem;
+}
+
 .intro-desc a:hover {
-    background-color: rgb(0, 189, 255);
+    background-color: var(--sec-button);
     transition: background-color .4s;
 }
 

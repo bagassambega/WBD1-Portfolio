@@ -9,6 +9,8 @@
     --third-color: rgb(240, 240, 240);
     --bg-active: rgb(39, 39, 39);
     --def-font: 'Inter', sans-serif;
+    --prim-button: rgb(0, 213, 255);
+    --sec-button: rgb(0, 189, 255);
 }
 
 * {
