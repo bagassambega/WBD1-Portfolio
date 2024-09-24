@@ -8,6 +8,7 @@
     --sec-color: rgb(197, 196, 196);
     --third-color: rgb(240, 240, 240);
     --bg-active: rgb(39, 39, 39);
+    --def-font: 'Inter', sans-serif;
 }
 
 * {
@@ -19,6 +20,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--prim-color);
+    font-family: var(--def-font);
 }
 
 nav {
@@ -31,7 +33,6 @@ nav {
 }
 
 nav a {
-    font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: var(--sec-color);
     font-size: 1.1rem;
@@ -84,7 +85,6 @@ footer h1 {
 footer .links a, footer .contacts a {
     text-decoration: none;
     color: var(--prim-color);
-    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 
@@ -94,4 +94,5 @@ footer .contacts a {
 
 footer .links a:hover, footer .contacts a:hover {
     color: var(--sec-color);
+    transition: color .3s;
 }
