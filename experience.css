@@ -26,7 +26,7 @@
     gap: .6rem;
     align-items: center;
     background-color: var(--bg-sec-color);
-    padding: 0 0 1rem 0;
+    padding: 0 0 2rem 0;
     border-radius: 1rem;
 }
 
@@ -52,13 +52,15 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2.5rem;
     background-color: var(--bg-sec-color);
     border-radius: 1rem;
 }
 
 .container .accordion img {
     width: 5vw;
+    height: auto;
+    object-fit: contain;
 }
 
 .container .accordion-content {
@@ -67,9 +69,68 @@
     justify-content: space-around;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 724px) {
+    .container {
+        margin: 1rem 0;
+        padding: 0 1rem;
+        justify-items: center;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
     .container #education-content {
         display: grid;
+        grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
+        row-gap: 2rem;
+        justify-items: center;
+    }
+
+    .container .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .container .card h4 {
+        font-size: 1rem;
+    }
+    
+    .container .content .card {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .container .card img {
+        width: 30vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .container #experience-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .container .content .accordion {
+        width: 90vw;
+        gap: 1.21rem;
+        padding: 1rem .8rem;
+    }
+
+    .container .accordion h2 {
+        font-size: 1.1rem;
+    }
+
+    .container .accordion p {
+        font-size: .8rem;
+    }
+
+    .container .accordion img {
+        width: 25%;
     }
 }

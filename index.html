@@ -7,9 +7,12 @@
     <link href="index.css" rel="stylesheet">
     <link href="layout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-burger">
+        <label for="nav-burger"><i class="fa-solid fa-bars"></i></label>
         <nav class="navbar">
             <a href="experience.html">Experiences</a>
             <a href="index.html" id="current">About Me</a>
@@ -18,8 +21,8 @@
     </header>
 
     <section id="intro">
-        <img src="/assets/img/profpic.jpg" alt="Profile Picture">
-        <div class="intro-desc">
+        <img loading="lazy" src="/assets/img/profpic.jpg" alt="Profile Picture">
+        <article id="intro-desc">
             <h1>Hello, there!</h1>
             <h2>My name is <span>Bagas Sambega Rosyada</span></h2>
             <p>Informatics Engineering Student • Parts of HMIF ITB • Institut Teknologi Bandung</p>
@@ -27,11 +30,7 @@
             <span>
                 <a href="experience.html">Learn More  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </span>
-        </div>
-    </section>
-    
-    <section id="about">
-        
+        </article>
     </section>
 
     <footer>
@@ -52,7 +51,6 @@
         <div class="links">
             <h1>About Project</h1>
             <a href="https://github.com/bagassambega/WBD1-Portfolio" target="_blank">Source Code</a>
-            <a href="about.html">About Portfolio</a>
         </div>
     </footer>
 </body>

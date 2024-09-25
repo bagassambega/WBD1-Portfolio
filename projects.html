@@ -7,9 +7,12 @@
     <link href="projects.css" rel="stylesheet">
     <link href="layout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-burger">
+        <label for="nav-burger"><i class="fa-solid fa-bars"></i></label>
         <nav class="navbar">
             <a href="experience.html">Experiences</a>
             <a href="index.html">About Me</a>
@@ -20,7 +23,7 @@
     <section id="highlight">
         <h1>Projects</h1>
         <div class="card">
-            <img src="/assets/img/image similarity.png">
+            <img loading="lazy" src="/assets/img/image similarity.png">
             <h2>Image Similarity Website</h2>
             <p>Web-based image similarity finder using Content-Based Image Retrieval System (CBIR) using color and texture match. </p>
             <span><p>Technology Used: </p> C++, Express, React, TailwindCSS, NextJS, Cors</span>
@@ -33,7 +36,7 @@
     <section id="other-projects">
         <div class="container">
             <div class="card">
-                <img src="/assets/img/wikirace.jpg">
+                <img loading="lazy" src="/assets/img/wikirace.jpg">
                 <h2>Wikirace Game Solver</h2>
                 <p>Web-based application to solve the Wikirace game using BFS and IDS algorithm</p>
                 <span><p>Technology Used: </p> React, TailwindCSS, Go</span>
@@ -43,7 +46,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/assets/img/matrixcalc.png">
+                <img loading="lazy" src="/assets/img/matrixcalc.png">
                 <h2>Matrix and Equation Calculator</h2>
                 <p>CLI-based for calculating determinant, inverse, n-th variable of 
                     linear equations, polinomial interpolation, regression, and image scaling.
@@ -54,7 +57,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/assets/img/pdfurl.jpg">
+                <img loading="lazy" src="/assets/img/pdfurl.jpg">
                 <h2>PDF from URL Opener</h2>
                 <p>Android-based application for opening a PDF from an URL without have to download it into device.</p>
                 <span><p>Technology Used: </p> Kotlin</span>
@@ -63,7 +66,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/assets/img/web3.png">
+                <img loading="lazy" src="/assets/img/web3.png">
                 <h2>School Website</h2>
                 <p>Senior high-school website. Participating in FE design and content seeding</p>
                 <span><p>Technology Used: </p> Wordpress</span>
@@ -73,11 +76,6 @@
             </div>
         </div>
         </div>
-        
-    </section>
-
-    <section id="certification">
-
     </section>
 
     <footer>
@@ -98,7 +96,6 @@
         <div class="links">
             <h1>About Project</h1>
             <a href="https://github.com/bagassambega/WBD1-Portfolio" target="_blank">Source Code</a>
-            <a href="about.html">About Portfolio</a>
         </div>
     </footer>
 </body>

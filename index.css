@@ -1,41 +1,49 @@
-section#intro {
+#intro {
    display: flex;
    flex-direction: row;
    gap: 4rem;
    justify-content: space-around; 
-   padding: 2rem 12rem;
-   margin: 2rem 4rem;
+   align-items: center;
+   width: 80%;
+   margin: 2rem auto;
 }
 
 #intro img {
-    width: 40%;
+    width: 25vw;
+    min-width: 25vw;
     border-radius: 1rem;
+    object-fit: contain;
 }
 
-.intro-desc {
+#intro-desc {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    justify-content: space-between;
     font-family: 'Inter', sans-serif;
 }
 
-.intro-desc h1 {
+#intro-desc h1 {
     font-size: 5rem;
 }
 
-.intro-desc p:first-of-type {
+#intro-desc p {
+    font-size: 1.4rem;
+}
+
+#intro-desc p:first-of-type {
     font-weight: 900;
 }
 
-.intro-desc h2 {
-    font-size: 2.5rem;
+#intro-desc h2 {
+    font-size: 3rem;
 }
 
-.intro-desc h2 span {
+#intro-desc h2 span {
     color: rgb(246, 178, 52);
 }
 
-.intro-desc span a {
+#intro-desc span a {
     text-decoration: none;
     padding: .6rem 1.2rem;
     background-color: var(--prim-button);
@@ -43,20 +51,64 @@ section#intro {
     border-radius: .3rem;
 }
 
-.intro-desc > span {
+#intro-desc > span {
     margin-top: .6rem;
 }
 
-.intro-desc a:hover {
+#intro-desc a:hover {
     background-color: var(--sec-button);
     transition: background-color .4s;
 }
 
-@media(min-width: 1080px) {
+@media (max-width: 1080px) {
+    #intro-desc {
+        gap: 1rem;
+    }
+
+    #intro h1 {
+        font-size: calc(3rem + 1vw);
+    }
+
+    #intro h2 {
+        font-size: calc(1.5rem + .5vw);
+    }
+
+    #intro p, #intro a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
     #intro {
-        display: flex;
         flex-direction: column;
-        padding: 2rem 4rem;
         margin: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        margin: auto;
+        width: 95%;
+        padding: 1.6rem;
+    }
+
+    #intro img {
+        width: 60%;
+        align-self: center;
+    }
+
+    #intro-desc h1 {
+        font-size: 2rem;
+    }
+
+    #intro-desc h2 {
+        font-size: 1.1rem;
+    }
+
+    #intro-desc p {
+        font-size: .8rem;
+    }
+
+    #intro-desc a {
+        padding: .2rem .8rem;
+        font-size: .8rem;
     }
 }
