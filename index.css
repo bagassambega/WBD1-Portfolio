@@ -91,7 +91,7 @@
     }
 
     #intro img {
-        width: 60%;
+        width: 55%;
         align-self: center;
     }
 
@@ -110,5 +110,19 @@
     #intro-desc a {
         padding: .2rem .8rem;
         font-size: .8rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #intro {
+        width: 90vw;
+    }
+
+    #intro-desc h1 {
+        font-size: 2.5rem;
+    }
+
+    #intro-desc h2 {
+        font-size: 1.5rem;
     }
 }

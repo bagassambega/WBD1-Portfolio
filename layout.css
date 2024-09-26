@@ -133,6 +133,7 @@ footer .links a:hover, footer .contacts a:hover {
     header label {
         display: block;
         margin: auto;
+        text-align: center;
     }
     
     nav a {
